@@ -1,3 +1,4 @@
+const splash = document.querySelector('[data-instructions]')
 const selectionButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
 const computerScoreSpan = document.querySelector('[data-computer-score]')
@@ -19,6 +20,12 @@ const SELECTIONS = [
         beats: 'paper'
     }
 ]
+
+document.addEventListener('DOMContentLoaded', (e) => {
+    setTimeout(() => {
+        splash.classList.add('display-none')
+    }, 10000)
+})
 
 selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e => {
@@ -61,20 +68,22 @@ function randomSelection() {
     return SELECTIONS[randomIndex]
 }
 
-// Instructions container
-const playButton = document.querySelector('[data-game-button]')
-const intro = document.querySelector('[data-instructions]')
-const game = document.querySelector('[data-container]')
-
-
-playButton.addEventListener('click', () => {
-    intro.innerHTML = game.innerHTML
-})
 
 
 
+// function executeScriptElements(containerElement) {
+//     const scriptElements = containerElement.querySelectorAll(".container");
+  
+//     Array.from(scriptElements).forEach((scriptElement) => {
+//       const clonedElement = document.createElement(".container");
+  
+//       Array.from(scriptElement.attributes).forEach((attribute) => {
+//         clonedElement.setAttribute(attribute.name, attribute.value);
+//       });
+      
+//       clonedElement.text = scriptElement.text;
+  
+//       scriptElement.parentNode.replaceChild(clonedElement, scriptElement);
+//     });
+//   }
 
-// function toggleGame() {
-//     const gameInstructions = document.getElementsByClassName('instructions')
-//     const displayInstructions = gameInstructions.style.display
-// }

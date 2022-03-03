@@ -5,38 +5,38 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Rock, paper, scissors game</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
    
 </head>
 <body>
-    <h1>Rock, Paper, Scissors</h1>
-    <section class="instructions" data-instructions>
-            <h2>This game is called rock, paper, scissors</h2>
-            <h3>How to play</h3>
-                <p>You have three options to chose from, rock (✊), paper(✋) and scissors(✌️)</p>
-                <p>Winning combinations are:</p>
-                <ul>
-                    <li>✊ beats ✌️</li>
-                    <li>✋ beats ✊</li>
-                    <li>✌️ beat ✋</li>
-                </ul>
-                <p>Try to win against the computer</p>
-            <button id="gameButton" data-game-button>Play now!!</button>
-    </section>
+    <div class="instructions" data-instructions>
+        <h2 class="fade-in">This game is called rock, paper, scissors</h2>
+        <h3 class="fade-in">How to play</h3>
+            <p class="fade-in">You have three options to chose from, rock (✊), paper(✋) and scissors(✌️)</p>
+            <p class="fade-in">Winning combinations are:</p>
+            <ul class="fade-in">
+                <li>✊ beats ✌️</li>
+                <li>✋ beats ✊</li>
+                <li>✌️ beat ✋</li>
+            </ul>
+            <p class="fade-in">Try to win against the computer</p>
+    </div>
     <section class="container" data-container>
-        <div class="selections">
-            <button class="selection" data-selection="rock">✊</button>
-            <button class="selection" data-selection="paper">✋</button>
-            <button class="selection" data-selection="scissors">✌️</button>
+        <h1 class="fade-in-container">Rock, Paper, Scissors</h1>
+        <div class="selections fade-in-container">
+            <button class="selection fade-in-container" data-selection="rock">✊</button>
+            <button class="selection fade-in-container" data-selection="paper">✋</button>
+            <button class="selection fade-in-container" data-selection="scissors">✌️</button>
         </div>
-        <div class="results">
-            <div class="results-title">
+        <div class="results fade-in-container">
+            <div class="results-title fade-in-container">
                 You
-                <span class="result-score" data-your-score>0</span>
+                <span class="result-score ffade-in-container" data-your-score>0</span>
             </div>
-            <div class="results-title" data-final-column>
+            <div class="results-title fade-in-container" data-final-column>
                 Computer
-                <span class="result-score" data-computer-score>0</span>
+                <span class="result-score fade-in-container" data-computer-score>0</span>
             </div>
         </div>
     </section>
