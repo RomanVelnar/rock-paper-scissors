@@ -14,4 +14,9 @@ This is a simulation of the very popular game of rock, paper, scissors. The game
 
 ## Future features
 
+- Multiplayer function
+- Keeping score for player vs computer and player vs player
+- Add some extra options, for example best of 3, 5, 7 etc
+
+
 ## How to run the app
