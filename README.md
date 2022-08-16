@@ -33,9 +33,9 @@ Usually its played until one player has threee wins.
 ## How to run the app
 Download the game by running the following code
 
-'''
+```
 git clone https://github.com/RomanVelnar/rock-paper-scissors.git
-'''
+```
 
 and run it in vitual server, or
 
